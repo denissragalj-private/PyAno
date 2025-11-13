@@ -13,7 +13,8 @@ class PianoType(Base):
 
     pianos = relationship('Piano', back_populates='piano_type')
 
-
+    def __repr__(self):
+        return f'Piano type: {self.name}'
 
 
 

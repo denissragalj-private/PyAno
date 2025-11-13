@@ -13,6 +13,9 @@ class PianoCategory(Base):
 
     pianos = relationship('Piano', back_populates='piano_category')
 
+    def __repr__(self):
+        return f'Piano category: {self.name}'
+
 
 
 
