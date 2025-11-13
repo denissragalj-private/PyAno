@@ -1,29 +1,19 @@
 
 
+
 DATABASE_PATH = 'data_store/db/py_ano.db'
-NAME_LENGTH = 150
+
+# Models constraints
+NAME_LENGHT = 150
+DESCRIPTION_LENGHT = 1500
+URL_LENGHT = 450
+LOCATION_STR = 50
+
 
 
 class AppConfig:
     def __init__(self, db_path: str = DATABASE_PATH):
         self.db_path = db_path
-        
-    
 
-    # TODO kreirati metodu koja će pokrenuti u konstruktoru i
-    # iz config.yaml učitati konfiguracijske postavke i ostale inicijalne postavke
-
-
-
-def load_config() -> AppConfig:
-    return AppConfig()
-
-def main():
-    config = load_config()
-    # kreiraj db 
-    pass
-
-
-if __name__ == "__main__":
-    main()
-from config import AppConfig    
+    # TODO Kreirati metodu koja ce se pokrenuti u kontruktoru
+    # i iz config.yaml datoteke ucitati putanje i ostale inicijalne postavke
