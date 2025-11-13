@@ -22,3 +22,5 @@ class Piano(Base):
     piano_category = relationship('PianoCategory', back_populates='pianos')
     piano_category_id = Column(Integer, ForeignKey('piano_category.id'))
 
+
+    def __repo
