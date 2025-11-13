@@ -23,4 +23,7 @@ class Piano(Base):
     piano_category_id = Column(Integer, ForeignKey('piano_category.id'))
 
     def __repr__(self):
-        return f'Piano: {self.name} / {self.piano_category.name} ({self.price} EUR)'
+        if self.id:
+            return f'Piano: ({self.id}) {self.name} ({self.price} EUR)'
+        else:
+            return f'Piano: {self.name} ({self.price} EUR)'

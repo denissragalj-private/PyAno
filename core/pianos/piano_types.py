@@ -15,14 +15,3 @@ class PianoType(Base):
 
     def __repr__(self):
         return f'Piano type: {self.name}'
-
-
-
-
-
-
-    # ACOUSTIC = "acoustic"
-    # ELECTRIC = "electric"
-    # DIGITAL = "digital"
-    # GRAND = "grand"
-    # UPRIGHT = "upright"
